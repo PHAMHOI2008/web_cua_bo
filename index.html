@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu kết quả xét tuyển - Trường Đại học Kinh tế Quốc dân</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            max-width: 650px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border-top: 6px solid #b71c1c; /* Màu đỏ NEU */
+        }
+
+        .header {
+            text-align: center;
+            padding: 25px 20px 15px;
+            background-color: #fff;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .header img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .header h3 {
+            color: #b71c1c;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .header h1 {
+            color: #0d47a1;
+            font-size: 20px;
+            margin-top: 5px;
+            text-transform: uppercase;
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .status-box {
+            background-color: #e8f5e9;
+            border: 1px solid #a5d6a7;
+            color: #2e7d32;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .info-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #eeeeee;
+            font-size: 15px;
+        }
+
+        .info-table td:first-child {
+            font-weight: 600;
+            color: #555;
+            width: 40%;
+        }
+
+        .info-table td:last-child {
+            color: #111;
+        }
+
+        .highlight {
+            color: #b71c1c;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #fafafa;
+            padding: 15px 25px;
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .btn {
+            background-color: #0d47a1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #0a3880;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <!-- Logo NEU minh họa -->
+            <img src="https://upload.wikimedia.org/wikipedia/vi/c/c6/Logo_KTQD.png" alt="Logo NEU">
+            <h3>BỘ GIÁO DỤC VÀ ĐÀO TẠO</h3>
+            <h1>TRƯỜNG ĐẠI HỌC KINH TẾ QUỐC DÂN</h1>
+        </div>
+
+        <div class="content">
+            <div class="status-box">
+                🎉 CHÚC MỪNG BẠN ĐÃ TRÚNG TUYỂN!
+            </div>
+
+            <table class="info-table">
+                <tr>
+                    <td>Họ và tên:</td>
+                    <td><strong>NGUYỄN VĂN A</strong></td>
+                </tr>
+                <tr>
+                    <td>Số CCCD / CMND:</td>
+                    <td>012345678xxx</td>
+                </tr>
+                <tr>
+                    <td>Số báo danh:</td>
+                    <td>01002345</td>
+                </tr>
+                <tr>
+                    <td>Ngành trúng tuyển:</td>
+                    <td class="highlight">Khoa học dữ liệu trong Kinh tế & Kinh doanh</td>
+                </tr>
+                <tr>
+                    <td>Mã ngành:</td>
+                    <td>7310101_KHDL</td>
+                </tr>
+                <tr>
+                    <td>Phương thức xét tuyển:</td>
+                    <td>Xét tuyển kết hợp (ĐGNL/ĐGTD)</td>
+                </tr>
+                <tr>
+                    <td>Điểm xét tuyển:</td>
+                    <td class="highlight">28.50 / 30.00</td>
+                </tr>
+            </table>
+
+            <p style="font-size: 14px; line-height: 1.5; color: #555;">
+                * Xin vui lòng hoàn thành thủ tục xác nhận nhập học trực tuyến trên cổng thông tin của Bộ GD&ĐT và theo dõi thông báo nhập học tại website chính thức của nhà trường.
+            </p>
+
+            <div class="btn-container">
+                <a href="#" class="btn" onclick="window.print()">In thông báo trúng tuyển</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            Trường Đại học Kinh tế Quốc dân - Số 207 Giải Phóng, Đồng Tâm, Hai Bà Trưng, Hà Nội
+        </div>
+    </div>
+
+</body>
+</html>
